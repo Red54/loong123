@@ -3,7 +3,7 @@ outline: deep
 prev: false
 next: false
 ---
-# LAT Information
+# Translation Information
 
 ## Start
 

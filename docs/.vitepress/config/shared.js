@@ -33,7 +33,7 @@ export const shared = defineConfig({
         socialLinks: [
             {
                 icon: "github",
-                link: "https://github.com/LiarOnce-LoongAL/loong-compatible-database",
+                link: "https://github.com/loongson-community/loong123",
             },
         ],
     },

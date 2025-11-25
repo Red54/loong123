@@ -11,8 +11,8 @@ next: false
 
 目前可以选择以下三种方式提供数据：
 
-1. 根据类型查看左侧对应的指引，之后 fork 一份[本仓库](https://github.com/LiarOnce-LoongAL/loong-compatible-database)，修改完毕后向我发起一个PR
-2. [在这里](https://github.com/LiarOnce-LoongAL/loong-compatible-database/issues)发起一份issue，选择`硬件信息/LAT/libLoL`对应的`Form`，根据摸板提示填写对应的表单提交
+1. 根据类型查看左侧对应的指引，之后 fork 一份[本仓库](https://github.com/loongson-community/loong123)，修改完毕后向我发起一个PR
+2. [在这里](https://github.com/loongson-community/loong123/issues)发起一份issue，选择`硬件信息/LAT/libLoL`对应的`Form`，根据摸板提示填写对应的表单提交
 3. (**仅针对硬件信息**) 通过 `hw-probe` 工具执行以下命令：
 
 > **注意：hw-probe 会将收集到的日志也一并上传，请酌情考虑该方式**
@@ -28,7 +28,7 @@ Uploaded to DB, Thank you!
 Probe URL: https://linux-hardware.org/?probe=(生成的id)
 ```
 
-然后[在这里](https://github.com/LiarOnce-LoongAL/loong-compatible-database/issues)发起一个 `(Markdown) 添加硬件信息 / Add Hardware Info` 模板 issue，提交 Probe URL 即可
+然后[在这里](https://github.com/loongson-community/loong123/issues)发起一个 `(Markdown) 添加硬件信息 / Add Hardware Info` 模板 issue，提交 Probe URL 即可
 
 
 ## 额外内容

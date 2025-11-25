@@ -14,8 +14,8 @@ next: false
 
 Currently, you can choose from the following three methods to provide data:
 
-1. Refer to the corresponding guide on the left based on the type, then fork [this repository](https://github.com/LiarOnce-LoongAL/loong-compatible-database), make your modifications, and initiate a PR to me.
-2. [create an issue here](https://github.com/LiarOnce-LoongAL/loong-compatible-database/issues). choose a appropriate form template, following the description to fill and submit the issue 
+1. Refer to the corresponding guide on the left based on the type, then fork [this repository](https://github.com/loongson-community/loong123), make your modifications, and initiate a PR to me.
+2. [create an issue here](https://github.com/loongson-community/loong123/issues). choose a appropriate form template, following the description to fill and submit the issue 
 3. (**For Hardware Info**) Use the `hw-probe` tool to execute the following command:
 
 > **Note: hw-probe will also upload the collected logs, please consider this method accordingly**
@@ -31,7 +31,7 @@ Uploaded to DB, Thank you!
 Probe URL: https://linux-hardware.org/?probe=(generated id)
 ```
 
-Then [create an issue here](https://github.com/LiarOnce-LoongAL/loong-compatible-database/issues), select the `(Markdown) 添加硬件信息 / Add Hardware Info` template and submit the Probe URL.
+Then [create an issue here](https://github.com/loongson-community/loong123/issues), select the `(Markdown) 添加硬件信息 / Add Hardware Info` template and submit the Probe URL.
 
 
 ## External Documents

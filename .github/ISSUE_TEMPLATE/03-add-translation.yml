@@ -1,0 +1,123 @@
+name: (Form) 添加转译运行的软件兼容信息 / Add software compatibility information with translation methods
+title: "[Add Translation] "
+description: 如果需要添加通过转译运行的兼容性情况请在这里填写模板 / If you need to add a compatibility case through the translation methods please fill out the template here.
+labels: ["translation"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        请务必在标题填写需要提交的软件名称。
+        提交 LAT 信息之前，请先阅读参与贡献的事项：https://loong123.cn/contribution/translation.html
+        Be sure to fill in the title with the name of the software to be submitted.
+        Before submitting LAT information, please read the matter of participating in the contribution: https://loong123.cn/en/contribution/translation.html
+
+  - type: input
+    attributes:
+      label: 软件名称 / Software Name
+      description: 此处填写软件名称，语言不限 / The value to fill in the software name, in any language
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 软件厂商 / Software Vendor
+      description: 此处填写软件厂商，限英语 / This value is only filled in by the manufacturer to which the hardware belongs, and **only in English**.
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: 软件版本号 / Software Version
+      description: |
+        此处填写软件的运行版本，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        Fill in the running version of the software here, if there is more than one version fill in `1` and specify it in the `More Information` section.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: LAT 或 Box64 / LAT or Box64
+      description: |
+        此处请选择软件运行使用的转译方式。若使用 LAT 则选择 `LAT`，若使用 Box64 则选择 `Box64`，若都有进行测试则选择 `LAT & Box64`。 / 
+        Select the translation method for running the software here. If using LAT, choose `LAT`; if using Box64, choose `Box64`; if testing both, choose `LAT & Box64`.
+      options:
+        - LAT
+        - Box64
+        - LAT & Box64
+      default: 0
+    validations:
+      required: true
+
+  - type: input
+    attributes:
+      label: LAT 运行库版本号 / LAT Version
+      description: |
+        此处填写运行该软件时使用的 LAT 运行库版本，如无特别说明，请填写当前的最新版本。若该软件为 Windows 软件，还需要填写 Wine 运行库版本，例如： `1.6.4 + wine-9.9-staging`。若未在 LAT 测试可不填。 / 
+        Fill in the version of the LAT runtime library used to run the software here, if not specified, please fill in latest version.
+        If the software is Windows software, you also need to fill in the Wine runtime version, e.g.: 1.6.4 + wine-9.9-staging. If not tested in LAT, leave blank.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: Box64 版本号 / Box64 Version
+      description: |
+        此处填写运行该软件时使用的 Box64 版本，如无特别说明，请填写当前的最新版本（可以填写当前 `commit id`），其他同上。若未在 Box64 测试可不填。 / 
+        Fill in the Box64 version used to run this software here, if not specified, please fill in latest version (You can enter the current `commit id`).
+        Other details remain the same. If not tested in Box64, leave blank.
+    validations:
+      required: false
+
+  - type: input
+    attributes:
+      label: 更新日期 / Upgrade Date
+      description: |
+        软件的更新日期，若有多个版本请填写 `1` 并在`更多信息`处进行说明。 / 
+        The update date of the software. If there is more than one version please fill in `1` and specify it in the `More Information` section.
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: LAT 兼容状态 / LAT Compatibility Status
+      description: 选择该软件目前在 LAT 运行的兼容状态，若未测试请选择`未知`。 / Select the compatibility status of this software currently running on LAT. If not tested, select `Unknown`.
+      options:
+        - 未知 / Unknown
+        - 兼容 / Compatible
+        - 有限兼容 / Partial Support
+        - 原生可用 / Native Available
+        - 不兼容 / Unsupported
+      default: 0
+    validations:
+      required: true
+
+  - type: dropdown
+    attributes:
+      label: Box64 兼容状态 / Box64 Compatibility Status
+      description: 选择该软件目前在 Box64 运行的兼容状态，若未测试请选择`未知`。 / Select the compatibility status of this software currently running on Box64. If not tested, select `Unknown`.
+      options:
+        - 未知 / Unknown
+        - 兼容 / Compatible
+        - 有限兼容 / Partial Support
+        - 原生可用 / Native Available
+        - 不兼容 / Unsupported
+      default: 0
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 证实软件运行状态的信息 / Information confirming the operational status of the software
+      description: |
+        请在此说明软件的运行状态，请提供运行截图，**如果同时使用了 Wine 兼容层请特别说明** / 
+        Please indicate here the running status of the software, please provide running screenshots, **specifically if Wine is used at the same time**.
+    validations:
+      required: true
+
+  - type: textarea
+    attributes:
+      label: 更多信息 / More Information
+      description: 如果该软件需要以文档的方式进行说明，请从这里开始  / If this software needs to be described in a documented way, start here.
+    validations:
+      required: false

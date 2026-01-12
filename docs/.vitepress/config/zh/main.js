@@ -5,7 +5,6 @@ import { sidebar_hardwares } from "./sidebar_hardwares";
 import { sidebar_translation } from "./sidebar_translation";
 import { sidebar_liblol } from "./sidebar_liblol";
 import { sidebar_contribution } from "./sidebar_contribution";
-import { sidebar_chips } from "./sidebar_chips";
 
 export const zh = defineConfig({
     lang: "zh",
@@ -41,7 +40,6 @@ export const zh = defineConfig({
                     items: sidebar_contribution,
                 },
             ],
-            "/chips/": sidebar_chips,
         }
     },
 });

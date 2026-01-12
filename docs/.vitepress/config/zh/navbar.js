@@ -17,7 +17,6 @@ const navbar = [
             { text: "LibLoL 相关", link: "/liblol/" }
         ],
     },
-    { text: "芯片参数", link: "/chips/" },
     { text: "参与贡献", link: "/contribution/" }
 ]
 

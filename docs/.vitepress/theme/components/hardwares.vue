@@ -93,7 +93,10 @@
     import databaseJson from "../../../data/datas.min.json";
     import filter_data from "../../../data/locales.min.json";
     import filter_vendors from "../../../data/vendors.min.json";
-    const current_lang = document.documentElement.lang;
+    let current_lang;
+    if (typeof window !== "undefined") {
+        current_lang = document.documentElement.lang;
+    }
 
     const tableData = ref(databaseJson.hardwares); // 初始化 tableData
 

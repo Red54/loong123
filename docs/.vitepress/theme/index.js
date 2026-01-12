@@ -14,11 +14,9 @@ import unknownBadge from './components/badges/unknown.vue'
 import unsupportedBadge from './components/badges/unsupported.vue'
 
 import i18n from "./i18n";
-import Layout from "./components/Layout.vue";
 
 export default {
     ...DefaultTheme,
-    Layout: Layout,
     enhanceApp(ctx) {
         DefaultTheme.enhanceApp(ctx);
         ctx.app.use(i18n);
